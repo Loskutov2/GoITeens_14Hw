@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header class="section header">
@@ -66,29 +66,32 @@
                             <li class="fields-item">
                                 <label for="name">Ім'я</label>
                                 <input type="text" name="name" id="name">
-                                <svg width="12" height="12"><use href="./images/icons/symbol-defs.svg#modal-man"></use></svg>
+                                <svg width="12" height="12" class="modal-icon"><use href="./images/icons/symbol-defs.svg#modal-man"></use></svg>
                             </li>
                             <li class="fields-item">
                                 <label for="tel">Телефон</label>
                                 <input type="text" name="tel" id="tel"> 
-                                <svg width="13" height="13"><use href="./images/icons/symbol-defs.svg#modal-tel"></use></svg>
+                                <svg width="13" height="13" class="modal-icon"><use href="./images/icons/symbol-defs.svg#modal-tel"></use></svg>
                             </li>
                             <li class="fields-item">
 
                                 <label for="mail">Пошта</label>
                                 <input type="text" name="mail" id="mail">
-                                <svg width="15" height="12"><use href="./images/icons/symbol-defs.svg#modal-mail"></use></svg>
+                                <svg width="15" height="12" class="modal-icon"><use href="./images/icons/symbol-defs.svg#modal-mail"></use></svg>
                             </li>
                             <li class="fields-item last">
                                 <label for="comment">Коментарі</label>
                                 <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
                             </li>
                         </ul>
-                        <label class="checkbox">
-                            <input type="checkbox">
-                            Погоджуюсь з розсилкою і приймаю 
-                            <a class="checkbox-link" href="">Умови договору</a>
-                        </label>
+                        <div class="check-box">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox-input">
+                                <svg width="12" height="12" class="galochka"><use href="./images/icons/symbol-defs.svg#galochka"></use></svg>
+                                Погоджуюсь з розсилкою і приймаю 
+                               <a class="checkbox-link" href="">Умови договору</a>
+                            </label>
+                        </div>
                         <button type="button" class="send">Надіслати</button>
                     </div>
                 </div>
