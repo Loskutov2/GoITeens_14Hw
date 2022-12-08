@@ -1,16 +1,17 @@
 *{font-family: 'Roboto'}
 .section{
     width: 100%;
-    padding-top: 94px;
-    padding-bottom: 94px;
     @media screen and (min-width: $mobile) {
         width: 480px;
+        padding: 94px 0px;
     }
     @media screen and (min-width: $tablet) {
         width: 768px;
+        padding: 94px 0px;
     }
     @media screen and (min-width: $desktop) {
-        width: 1200px;
+        width: 1630px;
+        padding: 94px 215px;
     }
 }
 .container{

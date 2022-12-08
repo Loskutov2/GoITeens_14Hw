@@ -1,5 +1,17 @@
+.footer.section{
+    background-color: var(--backgroud-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .link.f{
-    background-color: rgba(255, 255, 255, 0.1);;
+    background-color: rgba(255, 255, 255, 0.1);
+    &:hover,
+    &:focus{
+        background-color: var(--accent-color);
+    }
+}
+.container.f{
+    display: flex;
 }
 .contact-itgem{
     margin-top: 10px;
@@ -20,11 +32,6 @@
 }
 .footer-links{
     margin-left: 50px;
-}
-.footer-svg{
-    fill: currentColor;
-    margin-top: 13px;
-    margin-left: 13px;
 }
 .footer-button {
     display: inline-flex;
@@ -59,6 +66,10 @@
     background-color: var(--backgroud-color);
     padding-left: 16px;
     margin: 20px 0px;
+}
+input:focus,
+textarea:focus{
+    box-shadow: inset 0px 0px 10px -2px rgba(0, 0, 0, 0.25);
 }
 .footer-join-title{
     font-weight: 700;
