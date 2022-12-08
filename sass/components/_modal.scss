@@ -1,0 +1,129 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background-color: var(--thirdly-text-color);
+    padding: 40px;
+}
+.close{
+    position: absolute;
+    padding-top: 6px;
+    padding-left: 5px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background: var(--thirdly-text-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 225px;
+    margin-top: -32px;
+}
+.close:hover{
+    background-color: red;
+    fill: var(--thirdly-text-color);
+}
+/* Форма модального вікна */
+.check-box{
+    color: var(--secondary-text-color);
+    top: 20px;
+    text-align: left;
+}
+.checkbox-input{
+    position: absolute;
+    appearance: none;
+}
+.modal-tittle{
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 12px;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+}
+.fields-item:focus-within input,
+.fields-item:focus-within textarea{
+    border: 1px solid var(--accent-color);
+    outline: none;
+}
+.fields-item:focus-within .modal-icon{
+    fill: var(--accent-color);
+}
+.fields-item:not(last-child){
+    margin-bottom: 10px;
+}
+.fields-item input{
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    position: relative;
+}
+.fields-item{
+    text-align: left;
+    color: var(--secondary-text-color);
+}
+.fields-item textarea{
+    resize: none;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);;
+    width: 100%;
+    border-radius: 4px;
+    padding: 12px 16px;
+}
+.fields-item svg{
+    position: absolute;
+    display: flex;
+    margin-top: -26px;
+    margin-left: 14px;
+    color: currentColor;
+}
+.galochka{
+    fill: var(--thirdly-text-color);
+    border: 2px solid #212121;
+    border-radius: 2px;
+}
+.checkbox-input:checked + .galochka{
+    background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+.check-box{
+    margin-top: 20px;
+}
+.checkbox-link{
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+.send{
+    padding: 10px 58px;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-top: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1)
+}
+.send:hover{
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15);
+}

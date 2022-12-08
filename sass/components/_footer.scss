@@ -1,0 +1,76 @@
+.link.f{
+    background-color: rgba(255, 255, 255, 0.1);;
+}
+.contact-itgem{
+    margin-top: 10px;
+}
+.footer-title{
+    color: var(--thirdly-text-color);
+    font-weight: 700;
+    font-size: 14px;
+}
+.send.footer{
+    padding: 0;
+    width: 200px;
+    height: 50px;
+}
+.send.footer span{
+    display: inline-flex;
+    margin-bottom: 17px;
+}
+.footer-links{
+    margin-left: 50px;
+}
+.footer-svg{
+    fill: currentColor;
+    margin-top: 13px;
+    margin-left: 13px;
+}
+.footer-button {
+    display: inline-flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding-left: 29px;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    color: var(--thirdly-text-color);
+    &::after {
+        padding-top: 13px;
+        padding-right: 28px;
+        margin-left: 10px;
+        content: "";
+        background-image: url(./../../images/icons/symbol-defs.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+  }
+.send-icon{
+   fill: var(--thirdly-text-color);
+   margin-left: 12px;
+}
+#mail-footer{
+    width: 450px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--backgroud-color);
+    padding-left: 16px;
+    margin: 20px 0px;
+}
+.footer-join-title{
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--thirdly-text-color);
+    font-weight: 700;
+}
+.footer-register{
+    width: 450px;
+    text-align: center;
+    margin-left: 50px;
+}
+.container.f{
+    display: flex;
+}

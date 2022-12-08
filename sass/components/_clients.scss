@@ -1,0 +1,25 @@
+.client-list{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.client-item:not(:first-child){
+    margin-left: 30px;
+}
+.client-link svg{
+    fill: currentColor;
+    
+}
+.client-link{
+    color: #AFB1B8;
+    width: 170px;
+    height: 90px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    display: inline-flex;
+}
+.client-link:hover,
+.client-link:focus{
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}

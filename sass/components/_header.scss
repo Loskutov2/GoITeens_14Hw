@@ -1,0 +1,73 @@
+.studio{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    }
+    .studio.top{
+        color: var(--primary-text-color);
+        border: none;
+    }
+    .studio.down{
+        color: var(--thirdly-text-color);
+    }
+    .Web{
+        color: var(--accent-color);
+    }
+    .logo span{
+        color:var(--accent-color) ; 
+    }
+    .header-nav{
+        margin-left: 93px;
+    }
+    .nav-list{
+        display: flex;
+    }
+    .nav-item:not(:first-child){
+        margin-left: 54px;
+    }
+    .mail{
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    .mail.m{width: 16px; height: 12px;}
+    .mail.t{width: 10px; height: 16px; margin-bottom: -2%;}
+    .contact-item:not(:first-child){margin-left: 50px;}
+    .contact-item{top: 7px; height: 16px;}
+    .nav-link{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color:var(--primary-text-color);
+    &:hover,
+    &:focus{color:var(--accent-color);}
+    }
+    .contact-link:hover,
+    .contact-link:focus{
+        color:var(--accent-color);
+    }
+    .contact-link{
+        color: var(--secondary-text-color);
+        &:hover,
+        &:focus{color:var(--accent-color);}
+    }
+    .contact-link.mail::before{
+        width: 20px;
+        height: 14px;
+        background-image: url(/images/envelope.svg);
+    }
+    .contacts-list{
+        display: flex;
+        margin-left: auto;
+    }
+    .section.header{padding-top: 25px;
+    padding-bottom: 24px;
+    justify-content: center;
+    }
+    .container.nav{
+        display: flex;
+        align-items: center;
+    }
