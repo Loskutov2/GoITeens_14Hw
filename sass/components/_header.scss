@@ -30,11 +30,16 @@
     .mail{
         fill: currentColor;
         margin-right: 10px;
+        &.m{width: 16px; height: 12px;}
+        &.t{width: 10px; height: 16px;}
     }
-    .mail.m{width: 16px; height: 12px;}
-    .mail.t{width: 10px; height: 16px; margin-bottom: -2%;}
-    .contact-item:not(:first-child){margin-left: 50px;}
-    .contact-item{top: 7px; height: 16px;}
+    .contact-item{
+        @media screen and (min-width: $desktop) {
+            &:not(:first-child){
+            margin-left: 50px;
+        }
+        }
+    }
     .nav-link{
     font-style: normal;
     font-weight: 500;
@@ -45,14 +50,11 @@
     &:hover,
     &:focus{color:var(--accent-color);}
     }
-    .contact-link:hover,
-    .contact-link:focus{
-        color:var(--accent-color);
-    }
     .contact-link{
         color: var(--secondary-text-color);
         &:hover,
         &:focus{color:var(--accent-color);}
+        font-size: 14px;
     }
     .contact-link.mail::before{
         width: 20px;
@@ -60,8 +62,15 @@
         background-image: url(/images/envelope.svg);
     }
     .contacts-list{
-        display: flex;
-        margin-left: auto;
+        @media screen and (min-width: $tablet) {
+            margin-left: 89px;
+            width: max-content;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-left: 309px;
+            width: max-content;
+            display: flex;
+        }
     }
     .section.header{padding-top: 25px;
     padding-bottom: 24px;
@@ -70,4 +79,52 @@
     .container.nav{
         display: flex;
         align-items: center;
+        &:not(:last-child){
+            margin-bottom: 30px;
+        }
     }
+.mobile-hiden{
+    display: flex;
+    @media screen and (min-width: $mobile) {
+        opacity: 0%;
+        
+    }
+    @media screen and (min-width: $tablet) {
+        opacity: 100%;
+    }
+}
+.menu-button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: inline-flex;
+    margin: 0;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+
+    z-index: 5;
+
+    &:hover .icon, 
+    &:focus .icon{
+        fill: var(--accent-color)
+    }
+
+    & .icon-close{
+        display: none;
+    }
+    
+    &.is-open .icon-close{
+        display: block;
+    }
+    
+    &.is-open .icon-menu{
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}

@@ -1,4 +1,5 @@
 .footer.section{
+    margin-top: -50px;
     background-color: var(--backgroud-color);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -10,8 +11,22 @@
         background-color: var(--accent-color);
     }
 }
-.container.f{
-    display: flex;
+.container-f{
+    width: 100%;
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+        &::not(:first-child){
+        margin-left: 50px;
+        }
+    }
 }
 .contact-itgem{
     margin-top: 10px;
@@ -29,9 +44,6 @@
 .send.footer span{
     display: inline-flex;
     margin-bottom: 17px;
-}
-.footer-links{
-    margin-left: 50px;
 }
 .footer-button {
     display: inline-flex;
@@ -80,8 +92,4 @@ textarea:focus{
 .footer-register{
     width: 450px;
     text-align: center;
-    margin-left: 50px;
-}
-.container.f{
-    display: flex;
 }
