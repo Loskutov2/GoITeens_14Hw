@@ -1,9 +1,22 @@
 .hero-title{
-    width: 696px;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    @media screen and (min-width: $mobile) {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        width: 360px;
+    }
+    @media screen and (min-width: $tablet){
+        font-size: 27px;
+        line-height: 45px;
+        width: 325px;
+    }
+    @media screen and (min-width: $desktop){
+        width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 60px;
+    }
+    
     text-transform:uppercase;
     letter-spacing: 0.06em;
     color: var(--thirdly-text-color);

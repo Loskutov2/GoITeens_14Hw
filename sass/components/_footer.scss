@@ -1,4 +1,4 @@
-.footer.section{
+footer{
     margin-top: -50px;
     background-color: var(--backgroud-color);
     padding-top: 60px;
@@ -13,16 +13,21 @@
 }
 .container-f{
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     @media screen and (min-width: $mobile) {
         display: flex;
         flex-wrap: wrap;
+        width: 480px;
     }
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
+        width: 768px;
     }
     @media screen and (min-width: $desktop) {
         justify-content: space-between;
+        width: 1200px;
         &::not(:first-child){
         margin-left: 50px;
         }
